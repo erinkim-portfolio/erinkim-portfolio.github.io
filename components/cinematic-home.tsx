@@ -36,8 +36,8 @@ export function CinematicHome(){
     <small>DATA ANALYTICS INTERN</small>
     <p className="hero-statement">Building dashboards and reporting systems that turn scattered data into clear business decisions.</p>
     <div className="hero-primary-actions" aria-label="Professional links">
-     <a href="https://drive.google.com/file/d/1217wGnPp_2ZPg1xSuei8SWV_cGzKsZ8V/view?usp=sharing" target="_blank" rel="noreferrer">VIEW RESUME <ArrowUpRight size={14}/></a>
-     <a href="https://www.linkedin.com/in/eokim002/" target="_blank" rel="noreferrer">LINKEDIN <ArrowUpRight size={14}/></a>
+     <a href="https://drive.google.com/file/d/1217wGnPp_2ZPg1xSuei8SWV_cGzKsZ8V/view?usp=sharing" target="_blank" rel="noreferrer" data-ga-event="resume_click" data-ga-location="home_hero">VIEW RESUME <ArrowUpRight size={14}/></a>
+     <a href="https://www.linkedin.com/in/eokim002/" target="_blank" rel="noreferrer" data-ga-event="linkedin_click" data-ga-location="home_hero">LINKEDIN <ArrowUpRight size={14}/></a>
     </div>
    </div>
    <a className="scroll-cue" href="#identity"><span>SCROLL TO EXPLORE</span><ArrowDown/></a>
@@ -65,8 +65,8 @@ export function CinematicHome(){
   </section>
 
   <section className="cine-contact" id="contact">
-   <div className="contact-grid"/><p>START A CONVERSATION / 04</p><h2>Have a question<br/>worth exploring?</h2><a href="mailto:eokim002@gmail.com">EOKIM002@GMAIL.COM <ArrowUpRight/></a>
-   <div className="contact-bottom"><span>GEORGIA / REMOTE</span><div><a href="https://www.linkedin.com/in/eokim002/" target="_blank" rel="noreferrer">LINKEDIN</a><a href="https://drive.google.com/file/d/1217wGnPp_2ZPg1xSuei8SWV_cGzKsZ8V/view?usp=sharing" target="_blank" rel="noreferrer">RESUME</a></div></div>
+   <div className="contact-grid"/><p>START A CONVERSATION / 04</p><h2>Have a question<br/>worth exploring?</h2><a href="mailto:eokim002@gmail.com" data-ga-event="email_click" data-ga-location="home_contact">EOKIM002@GMAIL.COM <ArrowUpRight/></a>
+   <div className="contact-bottom"><span>GEORGIA / REMOTE</span><div><a href="https://www.linkedin.com/in/eokim002/" target="_blank" rel="noreferrer" data-ga-event="linkedin_click" data-ga-location="home_contact">LINKEDIN</a><a href="https://drive.google.com/file/d/1217wGnPp_2ZPg1xSuei8SWV_cGzKsZ8V/view?usp=sharing" target="_blank" rel="noreferrer" data-ga-event="resume_click" data-ga-location="home_contact">RESUME</a></div></div>
   </section>
   <BuildCredit/>
  </main>

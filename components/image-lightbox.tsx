@@ -3,8 +3,11 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { Maximize2, X } from "lucide-react";
+import { trackEvent } from "@/components/analytics";
 
-export function ImageLightbox({ src, alt }: { src: string; alt: string }) {
+type ImageLightboxProps = { src: string; alt: string; projectName: string; projectSlug: string; projectCategory: string; imageContext: "hero" | "gallery"; imageName: string };
+
+export function ImageLightbox({ src, alt, projectName, projectSlug, projectCategory, imageContext, imageName }: ImageLightboxProps) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -22,7 +25,7 @@ export function ImageLightbox({ src, alt }: { src: string; alt: string }) {
   }, [open]);
 
   return <>
-    <button className="lightbox-trigger" type="button" onClick={() => setOpen(true)} aria-label={`Open larger view of ${alt}`}>
+    <button className="lightbox-trigger" type="button" onClick={() => {trackEvent("project_image_expand",{project_name:projectName,project_slug:projectSlug,project_category:projectCategory,image_context:imageContext,image_name:imageName});setOpen(true)}} aria-label={`Open larger view of ${alt}`}>
       <img src={src} alt={alt}/>
       <span><Maximize2 size={17}/> View larger</span>
     </button>
