@@ -409,5 +409,10 @@ p,.hero-lede,.intro-copy p,.page-hero>p:last-child,.story-copy>p,.about-narrativ
     flex-direction:row;
   }
   .hero-pitch .hero-primary-actions a{width:auto;flex:1;min-height:48px}
-  .hero-meta.right,.scroll-cue{display:none}
+.hero-meta.right,.scroll-cue{display:none}
 }
+
+/* Work filters: readable on the dark Work page. */
+.filters button{color:var(--cream);border-color:rgba(216,194,168,.55);transition:background-color .2s,border-color .2s,color .2s}
+.filters button:hover,.filters button:focus-visible{background:rgba(216,194,168,.12);border-color:var(--cream)}
+.filters button.active{border-color:var(--espresso)}
