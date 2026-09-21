@@ -18,7 +18,7 @@ export function CinematicHome(){
  return <main className="cinematic" ref={root}>
   <header className="cinematic-nav">
    <Link href="/" className="cine-brand"><EkLogo className="brand-logo"/><span>ERIN KIM<small>BUSINESS INTELLIGENCE &amp; ANALYTICS</small></span></Link>
-   <nav><a href="#work">Work</a><Link href="/about">About</Link><Link href="/contact">Contact</Link></nav>
+   <nav><Link href="/work">Work</Link><Link href="/about">About</Link><Link href="/contact">Contact</Link></nav>
   </header>
   <aside className="section-rail" aria-label="Page sections"><a href="#top" aria-label="Go to Hero section">01</a><i/><a href="#identity" aria-label="Go to Tech Stack section">02</a><a href="#work" aria-label="Go to Featured Projects section">03</a><a href="#contact" aria-label="Go to Contact section">04</a></aside>
 
