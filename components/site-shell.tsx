@@ -1,0 +1,5 @@
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import { EkLogo } from "@/components/ek-logo";
+export function SiteHeader({ hideEmailLink = false }: { hideEmailLink?: boolean }) { return <header className="site-header wrap"><Link className="brand" href="/" aria-label="Erin Kim home"><EkLogo className="brand-logo"/><div>ERIN KIM<small>BUSINESS INTELLIGENCE &amp; ANALYTICS</small></div></Link><nav aria-label="Main navigation"><Link href="/work">Work</Link><Link href="/about">About</Link><Link href="/contact">Contact</Link></nav>{!hideEmailLink&&<a className="header-link" href="mailto:eokim002@gmail.com">Say hello <ArrowUpRight size={15}/></a>}</header>; }
+export function SiteFooter() { return <footer><div className="wrap footer-inner"><div className="footer-links"><a href="mailto:eokim002@gmail.com">Email</a><a href="https://www.linkedin.com/in/eokim002/" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://drive.google.com/file/d/1217wGnPp_2ZPg1xSuei8SWV_cGzKsZ8V/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a></div></div></footer>; }
