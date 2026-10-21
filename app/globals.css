@@ -420,3 +420,6 @@ p,.hero-lede,.intro-copy p,.page-hero>p:last-child,.story-copy>p,.about-narrativ
 
 /* Preserve the full Corpay screenshots without edge clipping. */
 .case-image.full-image img,.project-gallery.full-images img{clip-path:none}
+
+/* Show the complete Corpay screenshot in Featured Work. */
+.mission-photo img[src*="corpay-reconciliation"]{object-fit:contain;clip-path:none;background:#eef3f6}
