@@ -95,6 +95,23 @@ const projects = {
       {src:"/images/f1-monopoly-player-stats.png",alt:"F1 Monopoly player statistics showing titles, poles, career points, and top races",label:"PLAYER STATISTICS",ratio:"1890 / 990"},
       {src:"/images/f1-monopoly-forecast.webp",alt:"F1 Monopoly forecast showing projected cumulative points and title outcomes",label:"CHAMPIONSHIP FORECAST",ratio:"1573 / 1000"}
     ]
+  },
+  "corpay-reconciliation-tool": {
+    index:"08", category:"SYSTEMS & OPERATIONS", analyticsCategory:"Systems & Operations", title:"Corpay Reconciliation Tool", subtitle:"Replacing a five-spreadsheet monthly process with one guided reconciliation workspace.", tools:["Process Automation","Reconciliation Logic","SharePoint","Excel","AI-Assisted Development"],
+    brief:[{label:"ROLE",value:"Data Analyst & Product Designer"},{label:"ORGANIZATION",value:"Carroll Daniel"},{label:"FOCUS",value:"Corporate card reconciliation and exception review"},{label:"DATA",value:"Concur and Corpay workbooks"},{label:"DELIVERABLE",value:"Local browser tool and SharePoint Framework web part"}],
+    challenge:"The monthly corporate card reconciliation required line-by-line work across five spreadsheets. Transactions had to be matched between Concur and Corpay, unresolved items carried forward, exceptions reviewed, splits balanced, and the final workbook checked before export.",
+    approach:["Mapped the existing reconciliation process and converted it into five guided steps: select the statement month, import both source files, confirm the carry-forward range, review results, and export.","Built matching logic around employee, transaction date, merchant, amount, and item details, including one-to-many purchases, repeated charges, splits, manual statement items, and reversible exception decisions.","Tested the tool against approved May, June, and July workbooks, then packaged a local browser version and a SharePoint Framework version with saved monthly work, completed-version history, and export controls."],
+    outcome:"Reduced a process that took about one week each month to 1–2 hours. During testing, the tool reconciled 438 of 451 transactions, carried 12 forward, and flagged one missing Corpay charge for review.",
+    takeaway:"The hardest part was turning month-specific accounting decisions into rules that could work again the next month. Each change had to solve the current exception without breaking results that had already been approved.",
+    heroImage:"/images/corpay-reconciliation-overview.png",
+    heroRatio:"1748 / 900",
+    fullImages:true,
+    heroAlt:"Anonymized Corpay reconciliation workspace showing the monthly review workflow",
+    confidentiality:"Company branding, employee information, merchant names, file names, dates, coding values, and other identifying details have been changed or replaced. The screenshots preserve the original workflow and functionality.",
+    gallery:[
+      {src:"/images/corpay-reconciliation-exception.png",alt:"Anonymized exception review comparing Concur and Corpay source transactions",label:"EXCEPTION REVIEW",ratio:"1747 / 900"},
+      {src:"/images/corpay-reconciliation-history.png",alt:"Anonymized reconciliation history showing completed monthly files and versions",label:"VERSION HISTORY",ratio:"1746 / 901"}
+    ]
   }
 } as const;
 
