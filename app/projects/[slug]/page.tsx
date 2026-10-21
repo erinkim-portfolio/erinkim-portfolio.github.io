@@ -76,6 +76,19 @@ const projects = {
       {src:"/images/market-report-dashboard.png",alt:"Power BI dashboard showing sample quarterly Market Report performance",label:"MARKET REPORT PERFORMANCE"},
       {src:"/images/marketing-department-dashboard.png",alt:"Power BI dashboard showing sample marketing department activity",label:"MARKETING DEPARTMENT OVERVIEW"}
     ]
+  },
+  "f1-monopoly-championship-hq": {
+    index:"07", category:"PERSONAL EXPLORATIONS", analyticsCategory:"Personal Explorations", title:"F1 Monopoly Championship HQ", subtitle:"Turning a recurring family board game into an interactive championship dashboard.", tools:["Data Visualization","Dashboard UX","Data Modeling","Interactive Design","AI-Assisted Development"],
+    brief:[{label:"ROLE",value:"Product Designer & Data Analyst"},{label:"ORGANIZATION",value:"Personal Project"},{label:"FOCUS",value:"Season tracking and championship storytelling"},{label:"DATA",value:"F1 Monopoly workbook and game results"},{label:"DELIVERABLE",value:"Private interactive browser dashboard"}],
+    challenge:"Our F1 Monopoly results lived in a workbook, which made it difficult to follow the season as a championship. I wanted a clearer way to compare players, track both titles, revisit individual rounds, and see how the standings changed over time.",
+    approach:["Defined the scoring logic around the board game: the Monopoly Grand Prix winner earns the Drivers’ title, while accumulated points determine the Constructors’ standings.","Structured round-level results, starting positions, coins, race cards, drivers, and constructors into a dashboard-ready dataset.","Designed responsive views for season KPIs, player standings, cumulative points, race history, constructor performance, head-to-head comparisons, and the remaining-race forecast."],
+    outcome:"Created a private championship hub that turns each game into part of a longer season, keeps the rules and results in one place, and makes family rivalries easier to follow across 24 rounds.",
+    takeaway:"This project pushed me to treat a personal tracker like a real data product. The scoring rules had to be clear, every view needed a purpose, and the dashboard had to remain useful as new rounds were added.",
+    heroImage:"/images/f1-monopoly-championship-hq.svg",
+    heroAlt:"Privacy-safe preview of the F1 Monopoly Championship HQ dashboard",
+    organization:"PERSONAL PROJECT",
+    confidentiality:"The live F1 Monopoly tracker remains private. Player names have been generalized in this preview to protect family privacy while preserving the dashboard’s design and functionality.",
+    contain:true
   }
 } as const;
 
