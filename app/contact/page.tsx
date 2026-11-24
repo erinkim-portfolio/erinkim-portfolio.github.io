@@ -19,10 +19,10 @@ export default function ContactPage() {
       <div className="contact-intro">
         <p className="section-index">CONTACT / SAY HELLO</p>
         <h1>Let’s make the numbers mean something.</h1>
-        <p>I’m available now for business intelligence, data analytics, and marketing analytics opportunities in Georgia or remotely.</p>
+        <p>I’m exploring full-time business intelligence and analytics roles in Georgia or remotely.</p>
       </div>
       <div className="contact-panel">
-        <div className="contact-status"><span><i/> AVAILABLE NOW</span><b>GEORGIA / REMOTE</b></div>
+        <div className="contact-status"><span><i/> OPEN TO FULL-TIME ROLES</span><b>GEORGIA / REMOTE</b></div>
         <small>BEST WAY TO REACH ME</small>
         <a href="mailto:eokim002@gmail.com" className="email-big" data-ga-event="email_click" data-ga-location="contact_panel">eokim002@gmail.com <ArrowUpRight/></a>
         <button onClick={copy} className="copy-button">{copied ? <><Check size={16}/> Copied!</> : <><Copy size={16}/> Copy email</>}</button>
