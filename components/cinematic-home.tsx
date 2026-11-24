@@ -23,7 +23,7 @@ export function CinematicHome(){
   <aside className="section-rail" aria-label="Page sections"><a href="#top" aria-label="Go to Hero section">01</a><i/><a href="#identity" aria-label="Go to Tech Stack section">02</a><a href="#work" aria-label="Go to Featured Projects section">03</a><a href="#contact" aria-label="Go to Contact section">04</a></aside>
 
   <section className="cine-hero" id="top">
-   <div className="hero-meta right"><span>AVAILABILITY</span><b>OPEN NOW / GEORGIA + REMOTE</b></div>
+   <div className="hero-meta right"><span>AVAILABILITY</span><b>FULL-TIME ROLES / GEORGIA + REMOTE</b></div>
    <div className="giant-name" aria-label="Erin Kim"><span>ERIN</span><span>KIM</span></div>
    <div className="data-core" aria-label="Interactive analytics identity graphic">
     <div className="core-ring ring-a"/><div className="core-ring ring-b"/><div className="core-ring ring-c"/>
@@ -33,8 +33,8 @@ export function CinematicHome(){
     <div className="core-bars">{[38,55,47,69,83,74,96].map((v,i)=><i key={i} style={{height:v+"%"}}/>)}</div>
    </div>
    <div className="hero-pitch">
-    <small>DATA ANALYTICS INTERN</small>
-    <p className="hero-statement">Building dashboards and reporting systems that turn scattered data into clear business decisions.</p>
+    <small>FP&A BUSINESS INTELLIGENCE INTERN</small>
+    <p className="hero-statement">Building dashboards, internal tools, and applications that reduce manual work.</p>
     <div className="hero-primary-actions" aria-label="Professional links">
      <a href="https://drive.google.com/file/d/1217wGnPp_2ZPg1xSuei8SWV_cGzKsZ8V/view?usp=sharing" target="_blank" rel="noreferrer" data-ga-event="resume_click" data-ga-location="home_hero">VIEW RESUME <ArrowUpRight size={14}/></a>
      <a href="https://www.linkedin.com/in/eokim002/" target="_blank" rel="noreferrer" data-ga-event="linkedin_click" data-ga-location="home_hero">LINKEDIN <ArrowUpRight size={14}/></a>
@@ -44,11 +44,11 @@ export function CinematicHome(){
   </section>
 
   <section className="identity-section" id="identity">
-   <div className="stack-intro"><div><div className="stack-section-label">02 / TECH STACK</div><p className="identity-kicker">CORE TOOLKIT / BUILT FOR BUSINESS QUESTIONS</p><h2>Tools behind the work.</h2></div><p>My toolkit connects reporting, data preparation, and workflow design so teams can move from scattered inputs to useful decisions.</p></div>
+   <div className="stack-intro"><div><div className="stack-section-label">02 / TECH STACK</div><p className="identity-kicker">CORE TOOLKIT / BUILT FOR BUSINESS QUESTIONS</p><h2>Tools behind the work.</h2></div><p>I use these tools to build dashboards, prepare data, and automate manual business processes.</p></div>
    <div className="stack-grid">
-    <article><span>01</span><small>REPORTING LOGIC</small><h3>Excel formulas</h3><h3>KPI logic</h3><p>Calculations and reporting logic built around the question the business needs answered.</p></article>
+    <article><span>01</span><small>REPORTING LOGIC</small><h3>Excel &amp; Power Query</h3><h3>KPI logic</h3><p>Calculations and reporting logic built around the question the business needs answered.</p></article>
     <article><span>02</span><small>DATA VISUALIZATION</small><h3>Power BI</h3><h3>DataRails</h3><h3>Dashboard UX</h3><p>Interactive reporting experiences that make trends, risks, and next steps easier to see.</p></article>
-    <article><span>03</span><small>DATA ARCHITECTURE &amp; TOOLS</small><h3>SharePoint</h3><h3>Excel</h3><h3>Data modeling</h3><h3>Asana</h3><p>Connected sources, reusable structures, and workflows designed for reliable reporting.</p></article>
+    <article><span>03</span><small>DATA ARCHITECTURE &amp; TOOLS</small><h3>SharePoint</h3><h3>Excel</h3><h3>Data modeling</h3><h3>AI-assisted development</h3><p>Connected sources, reusable structures, and workflows designed for reliable reporting.</p></article>
    </div>
   </section>
 
